@@ -10,8 +10,8 @@ from sklearn.naive_bayes import MultinomialNB #Multinomial Model
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 
-
-data=pd.read_csv(r'D:\sentimental analysis\Dataset\Dataset')
+url='https://raw.githubusercontent.com/tiwariabhishekk10/Sentimental-Analysis/master/train.csv
+data=pd.read_csv(url)
 data.head()
 
 data.dropna()
