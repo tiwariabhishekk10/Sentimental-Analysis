@@ -23,7 +23,9 @@ print(f'First 50 stop words:\n{stop_words[:30]}')
 def remove_stopword(sentence):
     return[w for w in sentence if not w in stop_words]
 
-data=pd.read_csv(r"D:\sentimental analysis\Dataset\Dataset.csv")
+url='https://raw.githubusercontent.com/tiwariabhishekk10/Sentimental-Analysis/master/train.csv'
+
+data=pd.read_csv(url)
 data.head()
 
 mood=data.groupby('mood')
